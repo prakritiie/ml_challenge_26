@@ -1,0 +1,14 @@
+duckdb>=1.5.0
+pyarrow>=17.0.0
+pandas>=2.0.0
+numpy>=1.26.0
+psutil>=5.9.0
+
+# Final-pipeline feature computation: C-implemented byte-level Levenshtein
+# distance (see src/feature_engineering.py).
+rapidfuzz>=3.0.0
+
+# Model training and scoring stage. The standard PyPI wheel is CPU-only (no
+# GPU/CUDA support compiled in) -- see EXPERIMENTS.md for what a
+# GPU-enabled build would require and why it was not attempted.
+lightgbm>=4.0.0

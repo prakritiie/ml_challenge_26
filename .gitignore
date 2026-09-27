@@ -1,0 +1,34 @@
+# Raw datasets (large, provided separately by the challenge organizers)
+/dataset/
+
+# All derived/intermediate artifacts (normalized Parquet, candidate caches,
+# DuckDB temp spill, retrieval candidates) -- regenerable from src/, not
+# meant to be version-controlled.
+/derived/
+
+# Final submission outputs: keep ONLY the two canonical files.
+# Backups, timestamped baselines, and the pre-merge *_tfidf.tsv duplicates
+# are local working artifacts, not part of the shipped repository.
+/output/*
+!/output/matching_results.tsv
+!/output/candidate_pairs.tsv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Experimental / scratch / interrupted-run artifacts
+*.bak
+*.tmp
+scratchpad/
+*_sanity.tsv
+*_sanity.parquet
