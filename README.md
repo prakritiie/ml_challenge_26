@@ -56,7 +56,7 @@ flowchart TD
 | Approach | Leaderboard F0.5 |
 |---|---:|
 | Rule-based / deterministic blocking baseline | ~0.540 |
-| **TF-IDF retrieval + LightGBM (final)** | **0.809** |
+| **TF-IDF retrieval + LightGBM (final)** | **0.84** |
 
 ### Retrieval recall (validated on an 8,000-entity training sample, full
 target corpus, against `train_ground_truth.tsv`)
